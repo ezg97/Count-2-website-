@@ -1,0 +1,110 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
+/* Allows app to be completely full screen */
+html, body, #root{
+    height: 100%;
+    width: 100%;
+    /* border: 1px solid red; */
+}
+
+
+:root {
+    /* --hover: #00833f; */
+    --hover: #CC8B8C;
+    --button: #738CAF;
+    --light_background: #F5F5F5;
+    --secondary_color: #E5E5E5;
+    --text_main_color: #333333;
+    --nav_bar_border: #E5E5E5;
+    --white_opacity: rgba(255,255,255,.85);
+    --card_background: white;
+
+    --box_width: 100px;
+    --box_height: 100px;
+    --board_height: 80%;
+    --board_width: 80%;
+    --maxWidth: 1200px;
+
+    --player_one: red;
+    --player_two: blue;
+}
+
+.App {
+    height: 100%;
+    width: 100%;
+    padding: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    background-color: #333333;
+    color: white;
+}
+
+.box {
+    border: 1px solid grey;
+
+    color: white;
+
+    width: var( --box_width);
+    height: var( --box_height);
+    /* width: 100px; */
+
+    /* height: 100px; */
+
+    margin: 5px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.player_one {
+    /* border: 1px solid var(--player_one); */
+    /* color: var(--player_one); */
+    background-color: #CC8B8C;
+
+    border-radius: 5px;
+}
+
+.player_two {
+    /* border: 1px solid var(--player_two); */
+    background-color: #738CAF;
+    /* color: var(--player_two); */
+    border-radius: 5px;
+
+}
+
+.p1_selected:hover, .p1_selected:focus {
+    border: 1px solid #CC8B8C;
+    color: #CC8B8C;
+    cursor: pointer;
+
+}
+
+.p2_selected:hover, .p2_selected:focus {
+    border: 1px solid #738CAF;
+    color: #738CAF;
+    cursor: pointer;
+
+}
+
+.choice {
+    background-color: rgb(20,20,20);
+    color: white;
+    border: 1px solid white;
+}
+
+/* 
+    ---------------
+    Hide
+    ---------------
+*/
+.hide { 
+    display: none;
+}

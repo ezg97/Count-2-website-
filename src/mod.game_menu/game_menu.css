@@ -1,0 +1,92 @@
+/* 1. Initialize */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+:root{
+    --width-size: 200px;
+    --button-width-size: 90px;
+    --button-height-size: 40px;
+
+}
+
+/* 2. Buttons */
+.buttons{
+    width: var(--width-size);
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+
+    margin: 5vw auto;
+
+    width: 100%;
+
+}
+
+.buttons button, .buttons a{
+    width: var(--button-width-size);
+    height: var(--button-height-size);
+
+    font-size: 18px;
+
+    padding: 10px;
+    cursor: default;
+    
+
+    background-color: white;
+    text-decoration: none;
+    /* border: 1px solid blue; */
+
+    border-radius: 5px;
+    
+    opacity: 0;
+    animation: appear 4s ease forwards 2s;
+
+}
+
+
+/* Local */
+
+.local {
+    padding: 10px;
+    font-weight: bold;
+    background-color: grey;
+    color: white;
+    font-size: 18px;
+}
+
+.local:focus, .local:hover{
+    cursor: pointer;
+
+    color:white;
+    background: grey;
+    box-shadow: 0 0 10px grey, 0 0 40px grey, 0 0 80px #8c9ca8;
+}
+
+.btns {
+    width: 100%;
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.btn {
+    margin: 10px;
+    margin-bottom: 30px;
+}
+
+.menu_parent {
+    /* border: 10px solid purple; */
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

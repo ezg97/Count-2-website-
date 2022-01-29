@@ -1,0 +1,140 @@
+/* Back Board */
+.b_b {
+    background-color: #333333;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* border: 4px solid yellow; */
+    height: 100%;
+    /* wide mode */
+    width: 100%;
+    /* narrow mode */
+    /* max-width: 700px; */
+}
+
+/* Board Info */
+.game_board_info {
+    width: 100%;
+    max-width: var( --board_width);    display: flex;
+    justify-content: space-between;
+}
+
+.game_board_info > div > button {
+    margin-left: 5px;
+    margin-right: 5px;
+
+    background-color: #333333;
+    color: white;
+
+    font-size: 33px;
+    cursor: pointer;
+
+    font-weight: bolder;
+}
+
+.game_board_info > div > button:hover,
+.game_board_info > div > button:focus {
+    color: lightskyblue;
+}
+
+#narrow {
+}
+
+
+/* Board */
+.board {
+    border: 1px solid grey;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+
+    background-color: black;
+
+
+    width: 100%;
+    height: var( --board_height);
+    max-width: var( --board_width);
+
+    overflow: hidden;
+    padding: 20px;
+}
+
+
+.board:hover {
+    overflow-y: scroll;
+    padding-right:11px;
+}
+
+/*  
+    ---------------------
+    Game Board Scroll Bar 
+    ---------------------
+*/
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #888; 
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+  }
+
+  /* 
+  -----------
+  Game Over
+  -----------
+  */
+
+  .game_over {
+    background-color: #333333;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+    height: var( --board_height);
+    max-width: var( --board_width);
+}
+
+
+.game_over_btn {
+    padding: 10px;
+    font-weight: bold;
+    background-color: grey;
+    color: white;
+    font-size: 18px;
+    margin: 10px;
+    margin-bottom: 30px;
+}
+
+.game_over_btn:focus, .game_over_btn:hover{
+    cursor: pointer;
+
+    color:white;
+    background: grey;
+    box-shadow: 0 0 10px grey, 0 0 40px grey, 0 0 80px #8c9ca8;
+}
+
+.bottom_score_data {
+    width: 100%;
+    max-width: var( --board_width);
+
+    display: flex;
+    justify-content: space-between;
+    
+}

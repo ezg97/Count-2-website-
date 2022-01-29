@@ -1,0 +1,19 @@
+.level_selection_box {
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+}
+
+
+
+.level_selection_box > a > button {
+    margin: 5px;
+}
+
+.level_selection_box > span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 11px;
+}

@@ -1,0 +1,114 @@
+.app_nav{
+    box-sizing: border-box;
+    height: 3.2em;
+    /* max-height: 60px; */
+    width: 100%;
+
+    padding: 5px;
+
+    background-color: #383e42;
+    color: white;
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    position: fixed;
+    top: 0;
+
+    border-bottom: 1px solid var(--hover);
+
+}
+
+.app_nav > ul {
+    font-size: 1rem;
+    cursor: pointer;
+    display: flex;
+}
+
+.app_nav > ul:hover, .app_nav > ul:focus {
+  color: lightblue;
+}
+
+.app_nav ul li {
+    list-style-type: none;
+}
+
+.app_nav ul li:nth-child(1) {
+    margin-right: 10px;
+}
+
+.app_nav > ul > li > h3 {
+  /* display: none; */
+  font-size: 22px;
+}
+
+.app_nav > ul > li > i {
+  /* display: none; */
+  font-size: 22px;
+  margin-top: 5px;
+}
+
+.profile{
+    border-bottom: 1px solid black;
+    font-size: 20px;
+    padding: 12px;
+    /* border-radius: 5px; */
+}
+
+.profile:hover, .profile:focus {
+    border-bottom: 1px solid var(--button);
+    color: var(--button);
+}
+
+.dropdown {
+    cursor: pointer;
+}
+
+.dropdown-content {
+    /* display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    right: 8px;
+    margin-top: 5px; */
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    right: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+
+  }
+  
+  .dropdown-content a {
+    /* color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left; */
+    float: none;
+    color: black;
+    padding: 5px 20px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    border-bottom: 1px solid grey;
+  }
+
+  .dropdown-content a:first-child{
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+  }
+
+  .dropdown-content a:last-child {
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+  }
+
+  .dropdown-content a:hover, .dropdown-content a:focus {background-color: var(--button); color: white;}
+  .dropdown:hover .dropdown-content, .dropdown:focus .dropdown-content {display: block;}

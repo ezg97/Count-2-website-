@@ -1,0 +1,80 @@
+.menu_parent {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10%;
+}
+
+.menu_parent > h1 {
+    margin-bottom: 30px;
+}
+
+.login_section {
+    width: fit-content;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+}
+
+.input_field {
+    margin: 5px;
+    font-size: 18px;
+    padding: 10px;
+}
+
+/* Password View (Eye & Eye-Slash) */
+
+.password_view {
+    background-color: white;
+    color: black;
+    display: inline-block;
+    width: fit-content;
+    margin: 0px;
+    padding: 0px;
+    margin-left: -30px;
+    cursor: pointer;
+}
+
+.login_button {
+    margin: 5px;
+
+    padding: 10px;
+    font-weight: bold;
+    background-color: grey;
+    color: white;
+    font-size: 18px;
+
+    border-radius: 5px;
+}
+
+.login_button:focus, .login_button:hover{
+    cursor: pointer;
+
+    color:white;
+    background: grey;
+    box-shadow: 0 0 5px grey, 0 0 10px grey, 0 0 20px #8c9ca8;
+}
+
+.login_link {
+    margin: 5px;
+    font-size: 18px;
+    color: white;
+}
+
+#login_error, #signup_error {
+    background-color: red;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 5px;
+    border: 1px solid red;
+    border-radius: 5px;
+
+}
