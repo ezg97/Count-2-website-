@@ -82,16 +82,16 @@ function LevelSelection(props) {
                                         }>
                                                 <button className="btn local">Level {i + k + 1}</button>
                                         </Link>
-                                        {console.log('my wins ' + 
+                                        {/* {console.log('my wins ' + 
                                         (localStorage.getItem(
                                             (props.location.pathname.replace('/',''))
                                             +"_"+
                                             ((move * quantifier) + 1)
                                             +"_"+
                                             username)
-                                        ))}
+                                        ))} */}
                                     
-                                        {console.log('other player  ' + 
+                                        {/* {console.log('other player  ' + 
                                             (props.location.pathname.replace('/','') === "computer" ? (username+"_"+"Computer") : (username+"_"+"Player Two"))) }
                                         {console.log('path  ' + props.location.pathname.replace('/','')) }
 
@@ -105,7 +105,7 @@ function LevelSelection(props) {
                                             (props.location.pathname.replace('/','') === "computer" 
                                                 ? (username+"_"+"Computer") 
                                                 : (username+"_"+"Player Two")) 
-                                            )))}
+                                            )))} */}
 
                                         {Math.round(( Number(localStorage.getItem((props.location.pathname.replace('/',''))+"_"+((move * quantifier) + 1)+"_"+username))  /  (Number((localStorage.getItem((props.location.pathname.replace('/',''))+"_"+((move * quantifier) + 1)+"_"+username))) + Number(localStorage.getItem((props.location.pathname.replace('/',''))+"_"+((move * quantifier) + 1)+"_"+username+"_"+(props.location.pathname.replace('/','') === "computer" ? 'Computer' : 'Player Two') ))))  * 100)
                                             ? <span>Win Ratio: {Math.round(( Number(localStorage.getItem((props.location.pathname.replace('/',''))+"_"+((move * quantifier) + 1)+"_"+username))  /  (Number((localStorage.getItem((props.location.pathname.replace('/',''))+"_"+((move * quantifier) + 1)+"_"+username))) + Number(localStorage.getItem((props.location.pathname.replace('/',''))+"_"+((move * quantifier) + 1)+"_"+username+"_"+(props.location.pathname.replace('/','') === "computer" ? 'Computer' : 'Player Two') ))))  * 100)}%</span>

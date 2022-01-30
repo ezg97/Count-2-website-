@@ -138,3 +138,13 @@
     justify-content: space-between;
     
 }
+
+
+    /* ----------
+        COMPUTER SCREEN REGULAR 
+----------------------*/
+@media screen and (max-width: 450px) {
+    .b_b {
+        padding-top: 20px;
+    }
+}

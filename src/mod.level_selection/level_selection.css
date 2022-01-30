@@ -6,7 +6,6 @@
 }
 
 
-
 .level_selection_box > a > button {
     margin: 5px;
 }
@@ -16,4 +15,20 @@
     justify-content: center;
     align-items: center;
     font-size: 11px;
+}
+
+  /* ----------
+        COMPUTER SCREEN phone 
+----------------------*/
+@media screen and (max-width: 450px) {
+
+    .btns {
+        border: 2px dashed gold;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .level_selection_box {
+        padding: 15px;
+    }
 }
