@@ -45,7 +45,9 @@ function LoginSignup(props) {
             // redirect to the homepage
             // history.push('/');
             console.log('reload');
-            window.location.reload(); 
+            // window.location.reload(); 
+            window.location.reload(window.location.origin);
+
         } else {
             console.log('Wrong username or password');
             let login_error = document.getElementById("login_error");
@@ -127,9 +129,10 @@ function LoginSignup(props) {
                 localStorage.setItem('username', usernamme_entry);
 
                 // redirect to the homepage
-                // console.log('reload');
                 console.log('reload');
-                window.location.reload();            
+      
+                window.location.reload(window.location.origin);
+                // window.location.reload();            
             }
         }
         return 0;

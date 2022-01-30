@@ -1,6 +1,6 @@
 .app_nav{
     box-sizing: border-box;
-    height: 3.2em;
+    height: 2.2em;
     /* max-height: 60px; */
     width: 100%;
 
@@ -52,7 +52,7 @@
 .profile{
     border-bottom: 1px solid black;
     font-size: 20px;
-    padding: 12px;
+    padding: 4px;
     /* border-radius: 5px; */
 }
 

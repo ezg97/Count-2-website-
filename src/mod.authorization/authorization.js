@@ -25,7 +25,7 @@ function Authorization(props) {
                     <Switch>
                         <Route exact path={['/local','/computer']} component = {LevelSelection} />
                         <Route exact path={['/play/:type/:id']} component = {GameBoard} />
-                        <Route path={['/']} component = {GameMenu} />
+                        <Route path='/' component = {GameMenu} />
                     </Switch>
                 </BrowserRouter>
             </>
