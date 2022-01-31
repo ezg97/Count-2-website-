@@ -23,7 +23,6 @@
 @media screen and (max-width: 450px) {
 
     .btns {
-        border: 2px dashed gold;
         display: flex;
         flex-wrap: wrap;
     }
